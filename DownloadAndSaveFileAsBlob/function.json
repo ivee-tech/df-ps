@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "name": "url",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "OutputBlob",
+      "type": "blob",
+      "path": "cats/{rand-guid}.jpg",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}
